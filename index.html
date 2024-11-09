@@ -2,6 +2,7 @@
     <head>
         <title>まりなさんのごほうび箱</title>
         <link rel="stylesheet" href="index.css">
+        <script src="tenkey.js"></script>
         <script src="js.js"></script>
         <script src="list.js"></script>
     </head>
@@ -17,29 +18,41 @@
                     <li>次に進んだらリセット</li>
                 </ul>
             </div>
-            <div class="menu-content">
-                <dl>
-                    <dt>スペシャルまでに交換した数</dt>
-                        <dd><input type="text" name="change">個</dd>
-                    <dt>スペシャルまでに出たプチブ数</dt>
-                        <dd><input type="text" name="remaining">個</dd>
-                    <dt></dt>
-                        <dd><button onclick="calc()">入力</button></dd>
-                </dl>
+            <div class="allchange">
+                <div class="Item">
+                    <p class="Item-Label">スペシャルまでに交換した数</p>
+                    <input type="text" name="change" readonly="readonly">個
+                    <table class="tenkey_change">
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="Item">
+                    <p class="Item-Label">スペシャルまでに出たプチブ数</p>
+                    <input type="text" name="got" readonly="readonly">個
+                    <table class="tenkey_got">
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div>
+                    <button onclick="calc()">入力</button>
+                </div>
             </div>
-            <div class="menu-content">
+            <div class="result">
                 <dl>
-                    <dt>残りの数</dt>
-                        <dd><input type="text" name="count"></dd>
-                    <dt>残りのプチブ</dt>
-                        <dd><input type="text" name="count2"></dd>
-                    <dt>おすすめ</dt>
-                        <dd><input type="text" name="recommend"></dd>
-                    <dt>操作</dt>
-                        <dd><button onclick="draw(1)">1個</button><button onclick="draw(10)">10個</button><button onclick="get(1)">当たり</button></dd>
-                    <dt>
-                        <dd><button onclick="reset()">次の箱へ</button></dd>
-                    </dt>
+                    <div class="Item">
+                        <p class="Item-Label">残りの数</p>
+                        <input type="text" name="count" readonly="readonly">個
+                    </div>
+                    <div class="Item">
+                        <p class="Item-Label">残りのプチブ</p>
+                        <input type="text" name="count2" readonly="readonly">個
+                    </div>
+                    <div class="Item">
+                        <p class="Item-Label">おすすめ</p>
+                        <input type="text" name="recommend" readonly="readonly">個
+                    </div>
+                    <button onclick="draw(1)">1個</button><button onclick="draw(10)">10個</button><button onclick="get(1)">当たり</button>
+                    <button onclick="reset()">次の箱へ</button>
                 </dl>
             </div>
         </header>

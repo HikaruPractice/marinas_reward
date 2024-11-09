@@ -43,7 +43,7 @@ function calc(){
     }else{
         count=-1;
     }
-    temp=document.getElementsByName('remaining')[0].value;
+    temp=document.getElementsByName('got')[0].value;
     temp=Number(temp);
     if (Number.isInteger(temp)){
         count2=MAX_COUNT2-temp;
@@ -67,11 +67,32 @@ function get(n){
 
 function reset(){
     let input = document.getElementsByTagName('input')
-    let count = input.length;
-    for (i=0;i<count;i++){
+    let cnt = input.length;
+    for (i=0;i<cnt;i++){
         if (input[i].type='text')
             input[i].value=""
     }
     count=-1
     count2=-1
+}
+function pushButton(name,Symbol){
+    //引数のnameと一致するname属性を持つinputを編集
+    let target=document.getElementsByName(name)[0]
+    switch (Symbol){
+        case 'C':
+            target.value='';
+            break;
+        case '':
+            break;
+        default:
+            target.value=target.value+Symbol;
+    }
+    //桁あふれ調整
+    switch (name){
+        case 'change':
+            target.value=target.value.slice(-3);
+            break;
+        case 'got':
+            target.value=target.value.slice(-1);
+    }
 }
