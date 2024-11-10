@@ -1,10 +1,72 @@
 html {
     touch-action: manipulation;
   }
-td,tr{
-    height: 30px;
+main{
+    width: 100%;
+    max-width:1200px ;
+    font-size: 20px;
+    margin: 0 auto;
+}
+.wrapper{
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+h2{
+    font-weight: bold;
+    padding: 10px 0;
+}
+dl{
+    width: 100%;
+    margin-top: 5px;
+}
+dt,dd{
+    width: 100%;
+}
+.inp{
+    margin:0 auto;
+    width: 100%;
+}
+input{
+    display: inline-block;
+    width: calc(100% - 30px);
+    height: 40px;
+    margin:0 auto;
+    background-color: white;
+    border: 1px black solid;
+    color: black;
+}
+.ko{
+    display: inline-block;
     width: 30px;
+    height: 40px;
+    line-height:40px;
+    text-align: center;
+    background-color:ghostwhite;
+    border: 1px black solid;
+}
+/*このクラスはjsで追加します。*/
+/*あとからdisplay:noneにしないとテンキーを生成できない？ため*/
+.tenkey{
+    display: none;
+    position:absolute;
+}
+.tenkey_appear{
+    display: block;
+}
+td,tr{
+    width: calc((100vw * 0.9 - 20px) / 3);
+    max-width: calc((600px * 0.9  - 20px) / 3);
+    height: 40px;
+    line-height:40px;
     border: 1px,orange,solid;
     text-align: center;
     background-color: beige;
+}
+.td_C{
+    background-color: pink;
+}
+.td_return{
+    background-color: aqua;
 }

@@ -19,7 +19,9 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     }
 })
-
+function appear_tenkey(name){
+    document.getElementsByClassName('tenkey_'+name)[0].classList.add('tenkey_appear')
+}
 function update(){
     let elem_count=document.getElementsByName('count')[0];
     let elem_count2=document.getElementsByName('count2')[0];
@@ -95,7 +97,15 @@ function pushButton(name,Symbol){
         case 'C':
             target.value='';
             break;
-        case '':
+        case 'return':
+            document.getElementsByClassName('tenkey_' + name)[0].classList.remove('tenkey_appear');
+            switch(name){
+                case 'change':
+                    document.getElementsByName('got')[0].focus();
+                    break;
+                case 'got':
+                    document.getElementsByName('got')[0].blur();
+            }
             break;
         default:
             target.value=target.value+Symbol;
