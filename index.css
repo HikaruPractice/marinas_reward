@@ -1,3 +1,6 @@
+html {
+    touch-action: manipulation;
+  }
 td,tr{
     height: 30px;
     width: 30px;

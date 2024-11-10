@@ -15,12 +15,12 @@ let SymbolNames = [
     ['7', '8', '9'],
     ['Empty', '0', 'C'],
 ]
+
 window.addEventListener('DOMContentLoaded', function() {
     //交換した数を入力するためのテンキー
     createTenkey('change');
     createTenkey('got');
 })
-
 function createTenkey(name){
     target=document.getElementsByClassName('tenkey_'+name)[0].getElementsByTagName('tbody')[0]
     for (let i = 0; i < Symbols.length; i++) {

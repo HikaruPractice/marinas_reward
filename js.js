@@ -1,11 +1,24 @@
 window.onload=()=>{
-
+    
 };
 const MAX_COUNT=180
 const MAX_COUNT2=10
 let count=-1;
 let count2=-1;
 let recommend;
+
+window.addEventListener('DOMContentLoaded', function() {
+    if (window.ontouchstart !== undefined){
+        let buttons=document.querySelectorAll('[onclick]');
+        let length=buttons.length;
+        for (let i=0;i<length;i++){
+            if (buttons[i].onclick !== undefined){
+                buttons[i].ontouchend =buttons[i].onclick;
+                buttons[i].onclick=null;
+            }
+        }
+    }
+})
 
 function update(){
     let elem_count=document.getElementsByName('count')[0];
