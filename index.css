@@ -54,6 +54,7 @@ input{
 }
 .tenkey_appear{
     display: block;
+    touch-action: manipulation;
 }
 td,tr{
     width: calc((100vw * 0.9 - 20px) / 3);
