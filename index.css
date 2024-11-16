@@ -1,10 +1,9 @@
 html {
     touch-action: manipulation;
-    font-size: 40px;
   }
 main{
     width: 100%;
-    max-width:1200px ;
+    font-size: 5vw;
     margin: 0 auto;
 }
 #wrapper{
@@ -28,26 +27,32 @@ dt,dd{
     position: relative;
 }
 .inp{
-    margin:0 auto;
-    width: 100%;
+    margin:0 0 auto;
+    width: 50%;
+    min-width: 300px;
+    height: calc(8.5vw + 0.1vw);
+    line-height: calc(8.5vw + 0.1vw);
+    font-size: 7.5vw;
+    background-color: white;
+    border: 0.1vw black solid;
 }
 input{
     display: inline-block;
-    width: calc(100% - 50px);
-    height: 50px;
+    width: calc(100% - 8.5vw);
+    height: 8.5vw;
+    line-height: 8.5vw;
+    vertical-align: middle;
     margin:0 auto;
-    background-color: white;
-    border: 1px black solid;
+    background-color: transparent;
+    border: none;
     color: black;
 }
 .ko{
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    line-height:50px;
+    height: 8.5vw;
+    width: 8.5vw;
+    vertical-align: middle;
     text-align: center;
-    background-color:ghostwhite;
-    border: 1px black solid;
 }
 .tenkey{
     position:absolute;
@@ -57,13 +62,14 @@ input{
     visibility: hidden;
 }
 table{
-    width: 100%;
+    width: 50%;
+    min-width: 300px;
     table-layout:fixed;
 }
 td,tr{
-    height: 50px;
-    line-height:50px;
-    border: 1px,orange,solid;
+    height: 7.5vw;
+    line-height:7.5vw;
+    border: 0.1vw,orange,solid;
     text-align: center;
     background-color: beige;
 }
@@ -72,4 +78,14 @@ td,tr{
 }
 .td_return{
     background-color: aqua;
+}
+
+.recommend{
+    width: 100%;
+}
+.recommend input{
+    width: 100%;
+}
+.recommend span{
+    display: none;
 }

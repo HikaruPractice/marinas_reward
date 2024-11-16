@@ -138,13 +138,17 @@ function pushButton(name,Symbol){
             target.value='';
             break;
         case 'return':
-            document.getElementsByClassName('tenkey_' + name)[0].classList.toggle('tenkey-hidden');
             switch(name){
                 case 'change':
+                    document.getElementsByClassName('tenkey_change')[0].classList.add('tenkey-hidden');
+                    document.getElementsByClassName('tenkey_got')[0].classList.remove('tenkey-hidden');
                     document.getElementsByName('got')[0].focus();
                     break;
                 case 'got':
+                    document.getElementsByClassName('tenkey_change')[0].classList.add('tenkey-hidden');
+                    document.getElementsByClassName('tenkey_got')[0].classList.add('tenkey-hidden');
                     document.getElementsByName('got')[0].blur();
+                    calc();
             }
             break;
         default:
