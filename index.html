@@ -9,7 +9,7 @@
     </head>
     <body>
         <main>
-            <div class="wrapper">
+            <div id="wrapper">
                 <div class="allchange">
                     <h2>180個交換結果の入力(スペシャルが出たら停止)</h2>
                     <dl>
@@ -17,8 +17,8 @@
                             <p class="Item-Label">スペシャルまでに交換した数</p>
                         </dt>
                         <dd class="dd_input">
-                            <div class="inp"><input type="text" name="change" readonly="readonly" onfocus="appear_tenkey('change')"><span class="ko">個</span></div>
-                            <table class="tenkey_change tenkey">
+                            <div class="inp with-tenkey"><input type="text" name="change" readonly="readonly"><span class="ko">個</span></div>
+                            <table class="tenkey_change tenkey tenkey-hidden">
                                 <tbody></tbody>
                             </table>
                         </dd>
@@ -26,8 +26,8 @@
                             <p class="Item-Label">スペシャルまでに出たプチブ数</p>
                         </dt>
                         <dd class="dd_input">
-                            <div class="inp"><input type="text" name="got" readonly="readonly" onfocus="appear_tenkey('got')"><span class="ko">個</span></div>
-                            <table class="tenkey_got tenkey">
+                            <div class="inp with-tenkey"><input type="text" name="got" readonly="readonly"><span class="ko">個</span></div>
+                            <table class="tenkey_got tenkey tenkey-hidden">
                                 <tbody></tbody>
                             </table>
                         </dd>

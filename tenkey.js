@@ -1,4 +1,4 @@
-let _click = (window.ontouchstart === undefined)? 'onclick' : 'ontouchend';
+const _onclick = (window.ontouchstart === undefined)? 'onclick' : 'ontouchend';
 let target;
 let tr_element_buttons;
 let td_element_buttons;
@@ -29,7 +29,7 @@ function createTenkey(name){
             td_element_buttons = document.createElement('td');
             td_element_buttons.id = name + '_td_' + SymbolNames[i][j];
             td_element_buttons.className ='td_' + SymbolNames[i][j];
-            td_element_buttons.setAttribute(_click,
+            td_element_buttons.setAttribute(_onclick,
                 `pushButton('${name}','${SymbolNames[i][j]}')`
             );
             td_element_buttons.textContent = Symbols[i][j];

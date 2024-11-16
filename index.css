@@ -7,7 +7,7 @@ main{
     font-size: 20px;
     margin: 0 auto;
 }
-.wrapper{
+#wrapper{
     width: 90%;
     padding: 10px;
     margin: 0 auto;
@@ -49,12 +49,10 @@ input{
 /*このクラスはjsで追加します。*/
 /*あとからdisplay:noneにしないとテンキーを生成できない？ため*/
 .tenkey{
-    display: none;
     position:absolute;
 }
-.tenkey_appear{
-    display: block;
-    touch-action: manipulation;
+.tenkey-hidden{
+    visibility: hidden;
 }
 td,tr{
     width: calc((100vw * 0.9 - 20px) / 3);
