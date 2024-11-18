@@ -69,7 +69,7 @@ table{
 td,tr{
     height: 7.5vw;
     line-height:7.5vw;
-    border: 0.1vw,orange,solid;
+    border: 0.5vw,orange,solid;
     text-align: center;
     background-color: beige;
 }
