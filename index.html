@@ -36,7 +36,7 @@
                         <button onclick="calc()">計算</button>
                     </div>
                 </div>
-                <div class="result">
+                <div class="result tab-off">
                     <h2>計算結果</h2>
                     <dl>
                         <dt>
@@ -57,12 +57,22 @@
                         <dd>
                             <div class="inp recommend"><input type="text" name="recommend" readonly="readonly"></div>
                         </dd>
-                        <button onclick="draw(1)">1個</button><button onclick="draw(10)">10個</button><button onclick="get(1)">当たり</button>
-                        <button onclick="reset()">次の箱へ</button>
+                        <table class="drawpad">
+                            <tbody>
+                                <tr>
+                                    <td onclick="draw(1)">1回</td>
+                                    <td onclick="draw(10)">10回</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" onclick="get(1)">プチブ獲得</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="reset" onclick="reset()">次の箱へ</button>
                     </dl>
                 </div>
             </div>
-            <div>
+            <div style="display: none;">
                 <ul>
                     <li>スペシャルが出るまで交換する</li>
                     <li>残りくじ数(交換くじ数)、残りプチブ数を入力</li>

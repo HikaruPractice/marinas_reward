@@ -28,7 +28,7 @@ dt,dd{
 }
 .inp{
     margin:0 0 auto;
-    width: 50%;
+    width: 100%;
     min-width: 300px;
     height: calc(8.5vw + 0.1vw);
     line-height: calc(8.5vw + 0.1vw);
@@ -62,7 +62,7 @@ input{
     visibility: hidden;
 }
 table{
-    width: 50%;
+    width: 100%;
     min-width: 300px;
     table-layout:fixed;
 }
@@ -87,5 +87,31 @@ td,tr{
     width: 100%;
 }
 .recommend span{
+    display: none;
+}
+
+button{
+    display: block;
+    margin:5vh auto;
+    width: 15vw;
+    height: calc(8.5vw + 0.1vw);
+    line-height: calc(8.5vw + 0.1vw);
+    font-size: 5vw;
+    color: white;
+    background-color:cornflowerblue;
+    border: 0.1vw black solid;
+    text-align: center  ;
+    border-radius:calc((8.5vw + 0.1vw) / 2);
+}
+
+.reset {
+    width: 25vw;
+}
+
+.drawpad{
+    text-decoration: underline;
+}
+
+.tab-off{
     display: none;
 }

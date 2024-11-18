@@ -90,7 +90,13 @@ function update(){
 
 }
 
+function tab_swich(){
+    document.getElementsByClassName('allchange')[0].classList.toggle('tab-off');
+    document.getElementsByClassName('result')[0].classList.toggle('tab-off');
+}
+
 function calc(){
+    tab_swich();
     let temp=document.getElementsByName('change')[0].value;
     temp=Number(temp);
     if (Number.isInteger(temp)){
@@ -121,6 +127,7 @@ function get(n){
 }
 
 function reset(){
+    tab_swich();
     let input = document.getElementsByTagName('input')
     let cnt = input.length;
     for (i=0;i<cnt;i++){
