@@ -73,6 +73,7 @@ td,tr{
     text-align: center;
     background-color: beige;
     vertical-align:middle;
+    touch-action: manipulation;
 }
 .td_C{
     background-color: pink;
