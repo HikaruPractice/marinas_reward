@@ -68,8 +68,8 @@ table{
     font-size: 6vw;
 }
 td,tr{
-    height: 10vw;
-    border: 0.5vw,orange,solid;
+    height: max(10vw , 10vh);
+    border: max(0.5vw , 1px),orange,solid;
     text-align: center;
     background-color: beige;
     vertical-align:middle;
