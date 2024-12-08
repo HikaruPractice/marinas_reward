@@ -72,6 +72,7 @@ td,tr{
     border: 0.5vw,orange,solid;
     text-align: center;
     background-color: beige;
+    vertical-align:middle;
 }
 .td_C{
     background-color: pink;
@@ -79,7 +80,9 @@ td,tr{
 .td_return{
     background-color: aqua;
 }
-
+.td_get{
+    background-color: Gold;
+}
 .recommend{
     width: 100%;
 }

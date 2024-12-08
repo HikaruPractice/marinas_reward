@@ -10,10 +10,3 @@ const list=[
     [0,0]
 ]
 
-function vlookup(imp){
-    let max=list.length
-    for (let i = 0;i<max;i++){
-        if (imp >= list[i][0])
-            return list[i][1]
-    }
-}

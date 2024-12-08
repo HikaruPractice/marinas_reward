@@ -79,7 +79,8 @@ function update(){
     if(count<0 || count2<0){
         elem_recommend.value='エラー'
     }else{
-        let border = vlookup(count);    
+        //
+        let border = nankomade(count-count2);    
         if(count2<=border){
             recommend='次の箱に進む'
         }else{
@@ -88,6 +89,13 @@ function update(){
         elem_recommend.value=recommend;
     }
 
+}
+function nankomade(imp){
+    let max=list.length
+    for (let i = 0;i<max;i++){
+        if (imp >= (list[i][0]-list[i][1]))
+            return list[i][1]
+    }
 }
 
 function tab_swich(){
@@ -170,3 +178,4 @@ function pushButton(name,Symbol){
             target.value=target.value.slice(-1);
     }
 }
+
