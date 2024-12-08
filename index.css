@@ -65,10 +65,11 @@ table{
     width: 100%;
     min-width: 300px;
     table-layout:fixed;
+    font-size: 6vw;
 }
 td,tr{
-    height: 7.5vw;
-    line-height:7.5vw;
+    height: 7vw;
+    line-height:7vw;
     border: 0.5vw,orange,solid;
     text-align: center;
     background-color: beige;
