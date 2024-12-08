@@ -96,6 +96,7 @@ function nankomade(imp){
         if (imp >= (list[i][0]-list[i][1]))
             return list[i][1]
     }
+    return 0;
 }
 
 function tab_swich(){
